@@ -55,3 +55,9 @@ print(next(df.iterrows())[1])
 
 #filtering based on a particular column value
 print(df.loc[df['Type 1']=='Grass'].iloc[0:5,1:3])
+
+#sort based on a column
+print(df.sort_values('Name').iloc[:5,:2])
+#no of unique value, value count
+xrr =df['Type 1'].value_counts()
+print(xrr)
